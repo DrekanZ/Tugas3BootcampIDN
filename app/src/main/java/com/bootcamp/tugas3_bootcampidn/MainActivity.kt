@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity() {
 
         ApiConfig.getService().getTopHeadlines("id", "f044de69086e45198f8406be2094a229")
             .enqueue(object : Callback<ResponseNews>){
+                override fun onResponse
 
             }
 
