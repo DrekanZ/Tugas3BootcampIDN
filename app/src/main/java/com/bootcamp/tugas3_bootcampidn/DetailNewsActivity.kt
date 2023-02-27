@@ -3,6 +3,7 @@ package com.bootcamp.tugas3_bootcampidn
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.bootcamp.tugas3_bootcampidn.databinding.ActivityDetailNewsBinding
+import com.bootcamp.tugas3_bootcampidn.databinding.ActivityMainBinding
 import com.bootcamp.tugas3_bootcampidn.model.ArticlesItem
 import com.bumptech.glide.Glide
 
@@ -16,9 +17,8 @@ class DetailNewsActivity : AppCompatActivity() {
 
 	override fun onCreate(savedInstanceState: Bundle?) {
 		super.onCreate(savedInstanceState)
-		setContentView(R.layout.activity_detail_news)
-
 		binding = ActivityDetailNewsBinding.inflate(layoutInflater)
+		setContentView(binding.root)
 
 		supportActionBar?.title="Detail"
 		val dataNews = intent.getParcelableExtra<ArticlesItem>(EXTRA_NEWS)
