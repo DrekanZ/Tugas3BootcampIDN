@@ -15,8 +15,8 @@ object ApiConfig {
             .build()
     }
 
-    fun getService() : NewsApi{
-        return getRetrofit().create(NewsApi::class.java)
+    fun getService() : ApiService{
+        return getRetrofit().create(ApiService::class.java)
     }
 
 }
